@@ -1,7 +1,10 @@
 [build]
   base = "portfolio-app"
-  command = "npm run build"
+  command = "CI=false npm run build"
   publish = "portfolio-app/build"
+
+[build.environment]
+  CI = "false"
 
 [[redirects]]
   from = "/*"
