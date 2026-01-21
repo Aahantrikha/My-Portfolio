@@ -1,0 +1,157 @@
+/* Atomic Orbital Animations - Circular Motion */
+
+/* Orbit container setup */
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+}
+
+/* Orbit item positioning */
+.orbit-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Orbit 1 - Inner orbit (radius: 128px, 8 seconds) */
+.orbit-1 {
+  width: 256px;
+  height: 256px;
+  margin-left: -128px;
+  margin-top: -128px;
+  animation: spin-clockwise 8s linear infinite;
+}
+
+.orbit-1 .orbit-item {
+  animation: spin-counter-clockwise 8s linear infinite;
+}
+
+.orbit-1-reverse {
+  width: 256px;
+  height: 256px;
+  margin-left: -128px;
+  margin-top: -128px;
+  animation: spin-counter-clockwise 8s linear infinite;
+}
+
+.orbit-1-reverse .orbit-item {
+  animation: spin-clockwise 8s linear infinite;
+}
+
+/* Orbit 2 - Middle orbit (radius: 192px, 12 seconds) */
+.orbit-2 {
+  width: 384px;
+  height: 384px;
+  margin-left: -192px;
+  margin-top: -192px;
+  animation: spin-clockwise 12s linear infinite;
+}
+
+.orbit-2 .orbit-item {
+  animation: spin-counter-clockwise 12s linear infinite;
+}
+
+.orbit-2-reverse {
+  width: 384px;
+  height: 384px;
+  margin-left: -192px;
+  margin-top: -192px;
+  animation: spin-counter-clockwise 12s linear infinite;
+}
+
+.orbit-2-reverse .orbit-item {
+  animation: spin-clockwise 12s linear infinite;
+}
+
+/* Orbit 3 - Outer orbit (radius: 256px, 16 seconds) */
+.orbit-3 {
+  width: 512px;
+  height: 512px;
+  margin-left: -256px;
+  margin-top: -256px;
+  animation: spin-clockwise 16s linear infinite;
+}
+
+.orbit-3 .orbit-item {
+  animation: spin-counter-clockwise 16s linear infinite;
+}
+
+.orbit-3-offset-90 {
+  width: 512px;
+  height: 512px;
+  margin-left: -256px;
+  margin-top: -256px;
+  animation: spin-clockwise 16s linear infinite;
+  animation-delay: -4s;
+}
+
+.orbit-3-offset-90 .orbit-item {
+  animation: spin-counter-clockwise 16s linear infinite;
+  animation-delay: -4s;
+}
+
+.orbit-3-offset-180 {
+  width: 512px;
+  height: 512px;
+  margin-left: -256px;
+  margin-top: -256px;
+  animation: spin-clockwise 16s linear infinite;
+  animation-delay: -8s;
+}
+
+.orbit-3-offset-180 .orbit-item {
+  animation: spin-counter-clockwise 16s linear infinite;
+  animation-delay: -8s;
+}
+
+.orbit-3-offset-270 {
+  width: 512px;
+  height: 512px;
+  margin-left: -256px;
+  margin-top: -256px;
+  animation: spin-clockwise 16s linear infinite;
+  animation-delay: -12s;
+}
+
+.orbit-3-offset-270 .orbit-item {
+  animation: spin-counter-clockwise 16s linear infinite;
+  animation-delay: -12s;
+}
+
+/* Rotation animations */
+@keyframes spin-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-counter-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Pulse animation for nucleus */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
