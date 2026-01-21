@@ -1,0 +1,7 @@
+After creating your GitHub repository, run these commands:
+
+git remote add origin https://github.com/aahantrikha/portfolio-website.git
+git branch -M main
+git push -u origin main
+
+(Replace 'portfolio-website' with your actual repo name if different)

@@ -1,5 +1,5 @@
 ﻿import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Phone, ArrowRight, Code, Database, Globe, Laptop, Award, Calendar, MapPin, GraduationCap, Briefcase, Star, Download, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, ArrowRight, Code, Database, Globe, Laptop, Award, GraduationCap, Star, ExternalLink } from 'lucide-react';
 import './App.css';
 
 export default function App() {
