@@ -1,10 +1,12 @@
 [build]
   base = "portfolio-app"
-  command = "CI=false npm run build"
+  command = "npm run build"
   publish = "portfolio-app/build"
 
 [build.environment]
   CI = "false"
+  NODE_VERSION = "18"
+  GENERATE_SOURCEMAP = "false"
 
 [[redirects]]
   from = "/*"
