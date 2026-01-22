@@ -38,7 +38,7 @@ Please refer to the [portfolio-app/README.md](portfolio-app/README.md)
 
 ## 🌐 Live Demo
 
-[View Live Portfolio](#) *(Add your deployed URL here)*
+(https://portfolio-app-nine-flax.vercel.app/)
 
 ## 👨‍💻 About Me
 
